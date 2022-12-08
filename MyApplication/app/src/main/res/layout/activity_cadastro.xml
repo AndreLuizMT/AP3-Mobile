@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    tools:context=".CadastroActivity">
+
+    <view
+        android:id="@+id/topViewCad"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+        android:id="@+id/view2"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topViewCad" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:text="CADASTRO"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_assignment" />
+
+    <EditText
+        android:id="@+id/cadastrologin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/borda_arredondada"
+        android:drawableStart="@drawable/ic_baseline_person"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Usuário"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/cadastrosenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/borda_arredondada"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrologin" />
+
+    <Button
+        android:id="@+id/cadastrarbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/fundo_arredondado"
+        android:text="CADASTRAR"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrosenha" />
+
+    <Button
+        android:id="@+id/voltarbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/fundo_arredondado"
+        android:text="VOLTAR"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrarbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
